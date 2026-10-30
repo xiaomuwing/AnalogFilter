@@ -5,9 +5,15 @@
     <AssemblyTitle>AnalogFilter</AssemblyTitle>
     <Description>模拟滤波器设计库，算法移植自 SciPy 1.18.1 的 scipy.signal（BSD-3-Clause）</Description>
     <Product>AnalogFilter</Product>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1.0</Version>
+    <!--
+      AssemblyVersion 保持 1.0.0.0：它是程序集标识。改成 1.0.1.0 后，下游
+      FastAcquisition 里 `<Reference Include="AnalogFilter, Version=1.0.0.0">` 会被 MSBuild
+      判为无法解析（MSB3245），必须同步改引用。补丁版本只提升 File/Product 版本，
+      这也是 .NET 的常规做法。
+    -->
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <!-- 类库随 XML 文档一起交付：消费者（FastAcquisition）会同时复制 .dll 与 .xml。 -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <!-- 保持 bin\Release\AnalogFilter.dll 这一既有输出路径，避免破坏下游的复制脚本。 -->
