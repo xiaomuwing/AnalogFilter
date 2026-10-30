@@ -1,0 +1,11 @@
+# 统一换行与文本判定，避免不同机器上出现整文件 diff
+* text=auto
+
+*.cs      text diff=csharp
+*.csproj  text
+*.sln     text eol=crlf
+*.md      text
+*.py      text
+*.txt     text
+*.gitignore text
+*.gitattributes text

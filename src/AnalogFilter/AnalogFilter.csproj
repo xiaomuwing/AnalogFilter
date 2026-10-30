@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyTitle>AnalogFilter</AssemblyTitle>
+    <Description>模拟滤波器设计库，算法移植自 SciPy 1.18.1 的 scipy.signal（BSD-3-Clause）</Description>
+    <Product>AnalogFilter</Product>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <!-- 类库随 XML 文档一起交付：消费者（FastAcquisition）会同时复制 .dll 与 .xml。 -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- 保持 bin\Release\AnalogFilter.dll 这一既有输出路径，避免破坏下游的复制脚本。 -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+</Project>
